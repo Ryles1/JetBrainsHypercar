@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+{% for key, value in problems.items %}
+<a href="/get_ticket/{{ key }}">{{ value }}</a><br>
+{% endfor %}
+</body>
+</html>
